@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+:root {
+    --background-color: #303633ff;
+    --text-color: #fcfafaff;
+    --primary-1: #20bf55ff;
+    --primary-2: #42cafdff;
+    --primary-3: #fe6d73ff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Comfortaa', cursive;
+}
+
+input,
+button {
+    border: 0px;
+    border-radius: 0px;
+    outline: none;
+}
+
+.colLayout {
+    float: left;
+}
+
+@media screen and (max-width: 700px) {
+    .colLayout {
+        float: none;
+    }
+}
+
+#chessBoard,
+#chessBoard th,
+#chessBoard td {
+    border: 1px solid grey;
+}
+
+#chessBoard th,
+#chessBoard td {
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+}
+
+#chessBoard button {
+    color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+#infoPanel {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    #infoPanel {
+        margin-left: 0px;
+    }
+}

@@ -3,9 +3,122 @@
 
 <head>
     <title>Chess-chan</title>
-    <style></style>
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <table class="colLayout" id="chessBoard">
+        <tr>
+            <th>8</th>
+            <td><button id="81" onclick="piecesMove('81')"></button></td>
+            <td><button id="82" onclick="piecesMove('82')"></button></td>
+            <td><button id="83" onclick="piecesMove('83')"></button></td>
+            <td><button id="84" onclick="piecesMove('84')"></button></td>
+            <td><button id="85" onclick="piecesMove('85')"></button></td>
+            <td><button id="86" onclick="piecesMove('86')"></button></td>
+            <td><button id="87" onclick="piecesMove('87')"></button></td>
+            <td><button id="88" onclick="piecesMove('88')"></button></td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td><button id="71" onclick="piecesMove('71')"></button></td>
+            <td><button id="72" onclick="piecesMove('72')"></button></td>
+            <td><button id="73" onclick="piecesMove('73')"></button></td>
+            <td><button id="74" onclick="piecesMove('74')"></button></td>
+            <td><button id="75" onclick="piecesMove('75')"></button></td>
+            <td><button id="76" onclick="piecesMove('76')"></button></td>
+            <td><button id="77" onclick="piecesMove('77')"></button></td>
+            <td><button id="78" onclick="piecesMove('78')"></button></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td><button id="61" onclick="piecesMove('61')"></button></td>
+            <td><button id="62" onclick="piecesMove('62')"></button></td>
+            <td><button id="63" onclick="piecesMove('63')"></button></td>
+            <td><button id="64" onclick="piecesMove('64')"></button></td>
+            <td><button id="65" onclick="piecesMove('65')"></button></td>
+            <td><button id="66" onclick="piecesMove('66')"></button></td>
+            <td><button id="67" onclick="piecesMove('67')"></button></td>
+            <td><button id="68" onclick="piecesMove('68')"></button></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td><button id="51" onclick="piecesMove('51')"></button></td>
+            <td><button id="52" onclick="piecesMove('52')"></button></td>
+            <td><button id="53" onclick="piecesMove('53')"></button></td>
+            <td><button id="54" onclick="piecesMove('54')"></button></td>
+            <td><button id="55" onclick="piecesMove('55')"></button></td>
+            <td><button id="56" onclick="piecesMove('56')"></button></td>
+            <td><button id="57" onclick="piecesMove('57')"></button></td>
+            <td><button id="58" onclick="piecesMove('58')"></button></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td><button id="41" onclick="piecesMove('41')"></button></td>
+            <td><button id="42" onclick="piecesMove('42')"></button></td>
+            <td><button id="43" onclick="piecesMove('43')"></button></td>
+            <td><button id="44" onclick="piecesMove('44')"></button></td>
+            <td><button id="45" onclick="piecesMove('45')"></button></td>
+            <td><button id="46" onclick="piecesMove('46')"></button></td>
+            <td><button id="47" onclick="piecesMove('47')"></button></td>
+            <td><button id="48" onclick="piecesMove('48')"></button></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td><button id="31" onclick="piecesMove('31')"></button></td>
+            <td><button id="32" onclick="piecesMove('32')"></button></td>
+            <td><button id="33" onclick="piecesMove('33')"></button></td>
+            <td><button id="34" onclick="piecesMove('34')"></button></td>
+            <td><button id="35" onclick="piecesMove('35')"></button></td>
+            <td><button id="36" onclick="piecesMove('36')"></button></td>
+            <td><button id="37" onclick="piecesMove('37')"></button></td>
+            <td><button id="38" onclick="piecesMove('38')"></button></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td><button id="21" onclick="piecesMove('21')"></button></td>
+            <td><button id="22" onclick="piecesMove('22')"></button></td>
+            <td><button id="23" onclick="piecesMove('23')"></button></td>
+            <td><button id="24" onclick="piecesMove('24')"></button></td>
+            <td><button id="25" onclick="piecesMove('25')"></button></td>
+            <td><button id="26" onclick="piecesMove('26')"></button></td>
+            <td><button id="27" onclick="piecesMove('27')"></button></td>
+            <td><button id="28" onclick="piecesMove('28')"></button></td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td><button id="11" onclick="piecesMove('11')">test</button></td>
+            <td><button id="12" onclick="piecesMove('12')"></button></td>
+            <td><button id="13" onclick="piecesMove('13')"></button></td>
+            <td><button id="14" onclick="piecesMove('14')"></button></td>
+            <td><button id="15" onclick="piecesMove('15')"></button></td>
+            <td><button id="16" onclick="piecesMove('16')"></button></td>
+            <td><button id="17" onclick="piecesMove('17')"></button></td>
+            <td><button id="18" onclick="piecesMove('18')"></button></td>
+        </tr>
+        <tr>
+            <th>+</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+        </tr>
+    </table>
+
+    <div class="colLayout" id="infoPanel">
+        <p>Selected move: <span id="moveSelected">none</span></p>
+    </div>
+
+    <script src="./chess.js"></script>
+    <script src="./elements.js"></script>
+    <script>
+        chessBoardBuild()
+    </script>
 </body>
+
 <html>
